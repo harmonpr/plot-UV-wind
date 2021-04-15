@@ -37,4 +37,8 @@ ax.gridlines()
 # plot the data
 wind.plot.imshow(ax=ax, transform=ccrs.PlateCarree(), add_colorbar=True,
          cbar_kwargs=cbar_kwargs, interpolation='bicubic')
+
+# save the figure
+plt.savefig("map.png", bbox_inches='tight', dpi=150)
+
 plt.show()
